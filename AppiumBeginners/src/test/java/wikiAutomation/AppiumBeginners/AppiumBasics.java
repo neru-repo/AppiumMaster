@@ -9,7 +9,7 @@ import io.appium.java_client.AppiumBy;
 
 
 public class AppiumBasics extends BaseTestClass {
-	
+
 	@Test
 	public void WifiSettingsName() {
 		// different types of locators are
@@ -19,7 +19,7 @@ public class AppiumBasics extends BaseTestClass {
 		// Use AppiumBy for androidUIAutomator as well
 		driver.findElement(AppiumBy.accessibilityId("Preference")).click();
 		// xpath usually follows //tagname[@attribute='value'] pattern
-		// if no attribute value is present, then we can use //tagName 
+		// if no attribute value is present, then we can use //tagName
 		driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
 		driver.findElement(By.id("android:id/checkbox")).click();
 		driver.findElement(By.xpath("(//android.widget.RelativeLayout)[2]")).click();
@@ -28,7 +28,7 @@ public class AppiumBasics extends BaseTestClass {
 		assertEquals("WiFi settings", popupTitle);
 		driver.findElement(By.id("android:id/edit")).sendKeys("WiFi Name");
 		driver.findElement(By.id("android:id/button1")).click();
-		
+
 	}
 
 }
