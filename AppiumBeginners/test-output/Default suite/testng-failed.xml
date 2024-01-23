@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="wikiAutomation.AppiumBeginners.LandscapeOrientation">
+      <class name="wikiAutomation.AppiumBeginners.ECom_TestCase_3">
         <methods>
+          <include name="totalCartAmount"/>
           <include name="tearDown"/>
           <include name="configureAppium"/>
-          <include name="WifiSettingsName"/>
         </methods>
-      </class> <!-- wikiAutomation.AppiumBeginners.LandscapeOrientation -->
+      </class> <!-- wikiAutomation.AppiumBeginners.ECom_TestCase_3 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
