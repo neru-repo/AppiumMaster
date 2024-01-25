@@ -12,9 +12,9 @@ import org.testng.annotations.Test;
 import io.appium.java_client.AppiumBy;
 
 public class ECom_TestCase_2 extends BaseTestClass {
-	
+
 	@Test
-	
+
 	public void addToCart() {
 		driver.findElement(By.id("com.androidsample.generalstore:id/spinnerCountry")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"));")).click();
@@ -32,13 +32,13 @@ public class ECom_TestCase_2 extends BaseTestClass {
 				break;
 			}
 		}
-		
+
 		driver.findElement(By.id("com.androidsample.generalstore:id/appbar_btn_cart")).click();
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
 		wait.until(ExpectedConditions.attributeContains(driver.findElement(By.id("com.androidsample.generalstore:id/toolbar_title")), "text" , "Cart"));
 		String productName = driver.findElement(By.id("com.androidsample.generalstore:id/productName")).getText();
 		assertEquals(productName, "Jordan 6 Rings");
 	}
-	
+
 
 }

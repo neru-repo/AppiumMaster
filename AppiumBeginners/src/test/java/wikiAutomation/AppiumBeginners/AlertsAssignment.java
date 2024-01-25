@@ -20,7 +20,7 @@ public class AlertsAssignment extends BaseTestClass {
 		driver.findElement(By.id("android:id/button1")).click();
 
 	}
-	
+
 	@Test
 	public void okCancelDialogWithUltraLongMessage() throws InterruptedException {
 		driver.findElement(AppiumBy.accessibilityId("App")).click();

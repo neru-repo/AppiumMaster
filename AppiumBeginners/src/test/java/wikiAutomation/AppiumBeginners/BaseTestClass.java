@@ -33,7 +33,7 @@ public class BaseTestClass {
 				.withIPAddress("127.0.0.1").usingPort(4723).build();
 
 		// starts the server
-		service.start();
+		//service.start();
 
 		// This is used to set the Desired Capabilities
 		UiAutomator2Options options = new UiAutomator2Options();
@@ -71,7 +71,7 @@ public class BaseTestClass {
 				System.out.println(ele_visible);
 
 			}
-			
+
 			catch(Exception e) {
 
 				ele_visible = false;
@@ -88,7 +88,7 @@ public class BaseTestClass {
 				continue;
 
 			}
-		
+
 
 		} while(canScrollMore);
 	}
