@@ -46,6 +46,7 @@ public class ECom_TestCase_3 extends BaseTestClass {
 		totalCartAmount = totalCartAmount.trim();
 		System.out.println(totalCartAmount);
 		assertEquals(totalCartAmount, String.valueOf(total));
+		System.out.println(totalCartAmount);
 	}
 
 }
