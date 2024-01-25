@@ -11,7 +11,7 @@ import io.appium.java_client.AppiumBy;
 public class ECom_TestCase_1 extends BaseTestClass {
 
 	@Test(priority=0)
-	
+
 	public void fillFormWithoutName() {
 		driver.findElement(By.id("com.androidsample.generalstore:id/spinnerCountry")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"));")).click();
@@ -19,14 +19,14 @@ public class ECom_TestCase_1 extends BaseTestClass {
 		driver.findElement(By.id("com.androidsample.generalstore:id/btnLetsShop")).click();
 		String toast_message = driver.findElement(By.xpath("//android.widget.Toast")).getAttribute("name");
 		assertEquals(toast_message, "Please enter your name");
-		
+
 	}
-	
-	
+
+
 	@Test(priority=1)
 
 	public void fillForm() throws InterruptedException {
-		
+
 		driver.findElement(By.id("com.androidsample.generalstore:id/spinnerCountry")).click();
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView(text(\"Argentina\"));")).click();
 		String name_header = driver.findElement(By.xpath("//android.widget.TextView[@text='Your Name']")).getText();
