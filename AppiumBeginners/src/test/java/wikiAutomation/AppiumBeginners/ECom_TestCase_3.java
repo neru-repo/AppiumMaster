@@ -69,7 +69,6 @@ public class ECom_TestCase_3 extends BaseTestClass {
 		driver.findElement(By.name("q")).sendKeys(Keys.ENTER);
 		driver.pressKey(new KeyEvent(AndroidKey.BACK));
 		driver.context("NATIVE_APP");
-
 	}
 
 }
