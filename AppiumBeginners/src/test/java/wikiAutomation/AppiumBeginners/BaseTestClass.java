@@ -38,6 +38,8 @@ public class BaseTestClass {
 		// This is used to set the Desired Capabilities
 		UiAutomator2Options options = new UiAutomator2Options();
 		options.setDeviceName("Pixel");
+		// To run on a real device, give a generic device name like below
+		//options.setDeviceName("Android Device");
 		options.setApp("//Users//vignesh//git//AppiumCode//AppiumBeginners//src//test//java//resources//General-Store.apk");
 
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4723/"), options);
