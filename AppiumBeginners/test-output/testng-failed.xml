@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="wikiAutomation.AppiumBeginners.MobileBrowserTest">
+      <class name="wikiAutomation.AppiumBeginners.IOSSwipeTestWithInbuiltApp">
         <methods>
-          <include name="BrowserTest"/>
-          <include name="tearDown"/>
+          <include name="swipeTestWithInBuiltApp"/>
           <include name="configureAppium"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- wikiAutomation.AppiumBeginners.MobileBrowserTest -->
+      </class> <!-- wikiAutomation.AppiumBeginners.IOSSwipeTestWithInbuiltApp -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
